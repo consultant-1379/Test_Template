@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+		<groupId>com.ericsson.son.sonpm.presentation.core</groupId>
+		<artifactId>sonpm_core_ui_pom</artifactId>
+		<version>1.1.96-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>sonpm_core_ui</artifactId>
+	<name>sonpolicymanager</name>
+	<packaging>pom</packaging>    
+
+	<properties>
+		<node.executable>/proj/gitadm100/tools/node/0.8.18/bin/node</node.executable>
+		<npm.executable>/proj/gitadm100/tools/node/0.8.18/bin/npm</npm.executable>
+		<!-- Below UI SDK Configuration is used while running on TOR Server. make sure this is uncommented before checking into Git -->
+		 <uisdk.executable>/proj/cdsadm100/data/local_components/uisdk_client/tools/1.0.45/package/src/cdt.js</uisdk.executable>
+		<!-- Below UI SDK Configuration is used while you build the PCI Manager UI on local machine. This muse be commented before checking into Git. NOTE: Change the nmp node module location as per your local computer -->
+		<!-- <uisdk.executable>C:/Users/earpram/AppData/Roaming/npm/node_modules/tools/src/cdt.js</uisdk.executable>  -->
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>d MMM yyyy</maven.build.timestamp.format>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<id>ui sdk build</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${node.executable}</executable>
+							<arguments>
+								<argument>${uisdk.executable}</argument>
+								<argument>build</argument>
+								<argument>package</argument>
+								<argument>--no-color</argument>
+								<argument>--prop-version</argument>
+								<argument>${project.version}</argument>
+								<argument>--prop-date</argument>
+								<argument>${timestamp}</argument>
+								<argument>--prop-namespace</argument>
+								<argument>${project.artifactId}</argument>
+								<argument>--prop-node</argument>
+								<argument>${node.executable}</argument>
+								<argument>--prop-npm</argument>
+								<argument>${npm.executable}</argument>
+								<argument>--prop-defaultPhase</argument>
+								<argument>package</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+                <execution>
+                    <phase>initialize</phase>
+                    <id>parse-version</id>
+                    <goals>
+                        <goal>parse-version</goal>
+                    </goals>
+                </execution>
+
+				<execution>
+						<id>attach_tgz</id>
+						<phase>package</phase>
+						<goals>
+							<goal>attach-artifact</goal>
+						</goals>
+						<configuration>
+							<artifacts>
+								<artifact>
+									<file>${basedir}/target/${project.name}-${project.version}.tar.gz</file>
+									<type>tar.gz</type>
+								</artifact>
+							</artifacts>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>windows</id>
+			<activation>
+				<os>
+					<family>Windows</family>
+				</os>
+			</activation>
+			<properties>
+				<node.executable>node</node.executable>
+				<npm.executable>npm.cmd</npm.executable>
+			</properties>
+		</profile>
+	</profiles>
+</project>

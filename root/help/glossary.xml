@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<concept id="NetworkExplorer-Glossary">
+    <title>Glossary</title>
+    <conbody>
+        <section>
+            <title>Full Distinguished Name (FDN)</title>
+            <p>
+                This is a unique identifier for a managed object.
+            </p>
+        </section>
+    </conbody>
+</concept>

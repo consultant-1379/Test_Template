@@ -1,0 +1,12 @@
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="16px" height="16px" viewBox="20 5.97 16 16" enable-background="new 20 5.97 16 16" xml:space="preserve">
+<defs>
+</defs>
+<rect display="none" fill="#939598" width="87" height="2633.97"/>
+<path fill="#FFFFFF" d="M32.999,13.971c0,0.25-0.073,0.491-0.261,0.669l-4.324,4.054c-0.391,0.368-1.023,0.369-1.414,0
+	s-0.391-0.967,0-1.336l2.616-2.442H23c-0.553,0-1-0.423-1-0.945c0-0.521,0.447-0.945,1-0.945h6.617L27,10.583
+	c-0.391-0.369-0.391-0.967,0-1.336c0.195-0.185,0.451-0.277,0.707-0.277s0.512,0.092,0.707,0.277l4.324,4.055
+	C32.926,13.48,32.999,13.72,32.999,13.971z"/>
+<rect x="20" y="5.97" display="none" opacity="0.2" fill="#E94E47" width="16" height="16"/>
+</svg>

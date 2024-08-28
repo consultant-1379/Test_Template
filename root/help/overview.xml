@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<concept id="MyApp-Overview">
+    <title>Overview</title>
+    <conbody>
+        <p>
+           This application allows users to search through managed objects by FDN or Type.
+
+           Users can save collections of objects or their search query by clicking "Save as...". They may then enter a
+           name, select type, and click "Save".
+
+           To find a collection or saved search, the user can click on the name in the sidebar. This will display the
+           objects in the collection or saved search.
+        </p>
+    </conbody>
+</concept>

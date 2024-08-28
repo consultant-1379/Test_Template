@@ -1,0 +1,97 @@
+
+.eaSonOptManager-wSonOmAccordion {
+        position:relative;
+}
+
+.eaSonOptManager-wSonOmAccordion-header {
+        cursor:pointer;
+        height:32px;
+        border-bottom:none;
+		line-height: 32px;
+        font-size:1.6rem;
+        margin-bottom:0px;
+        margin:0 0 0.6rem 0;
+        font-weight:normal;
+        color:#333333;
+		margin-left: 20px;
+}
+
+.eaSonOptManager-wSonOmAccordion-button,
+.eaSonOptManager-wSonOmAccordion-title {
+        display: inline-block;
+        margin-right: 8px;
+}
+
+.eaSonOptManager-wSonOmAccordion-title span {
+	margin-left: 5px;
+}
+
+.eaSonOptManager-wSonOmAccordion-SVG {
+        float: left;
+        height: 32px;
+        width: 32px;
+}
+
+.eaSonOptManager-wSonOmAccordion-infoIcon {
+        pointer-events: auto;
+        display:inline-block;
+		float:right;
+        margin-right:8px;
+}
+
+.eaSonOptManager-wSonOmAccordion-number {
+        font-size:1.2rem;
+        margin-left:8px;
+        margin-top:8px;
+}
+
+.eaSonOptManager-wSonOmAccordion-button {
+        outline:none;
+        margin-right:12px;
+        margin-top:8px;
+        float:right;
+        cursor:pointer;
+        opacity:0.7;
+		float:left;
+}
+
+.eaSonOptManager-wSonOmAccordion-button:hover {
+        opacity:1.0;
+}
+
+.eaSonOptManager-wSonOmAccordion-button:active {
+        opacity:0.4;
+}
+
+.eaSonOptManager-wSonOmAccordion-body {
+        height:auto;
+        max-height:0;
+        margin:0;
+        margin-left:8px;
+        overflow:hidden;
+        -webkit-transition:max-height .3s ease-out;
+        -moz-transition:max-height .3s ease-out;
+        -ms-transition:max-height .3s ease-out;
+        -o-transition:max-height .3s ease-out;
+        transition:max-height .3s ease-out;
+        -webkit-transition-delay:0s;
+        -moz-transition-delay:0s;
+        -ms-transition-delay:0s;
+        -o-transition-delay:0s;
+        transition-delay:0s;
+}
+
+.eaSonOptManager-wSonOmAccordion_disabled {
+        opacity:1.0;
+}
+
+.eaSonOptManager-wSonOmAccordion_disabled,.eaSonOptManager-wSonOmAccordion_disabled:hover,.eaSonOptManager-wSonOmAccordion_disabled:active,.eaSonOptManager-wSonOmAccordion_disabled .eaSonOptManager-wSonOmAccordion-header:hover,.eaSonOptManager-wSonOmAccordion_disabled .eaSonOptManager-wSonOmAccordion-button:hover {
+        -ms-touch-action:none !important;
+        cursor:default !important;
+        pointer-events:none !important;
+        touch-action:none !important;
+}
+
+.eaSonOptManager-wSonOmAccordion_disabled .eaSonOptManager-wSonOmAccordion-button,.eaSonOptManager-wSonOmAccordion_disabled .eaSonOptManager-wSonOmAccordion-button:hover,.eaSonOptManager-wSonOmAccordion_disabled .eaSonOptManager-wSonOmAccordion-button:active {
+        opacity:0.5;
+}

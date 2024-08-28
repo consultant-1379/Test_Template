@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SON Optimization Manager</title>
+    <script type="text/javascript" src="node_modules/jscore/require/require.js"></script>
+    <script type="text/javascript" src="config/require.config.js"></script>
+    <link href="node_modules/branding/css/assets.css" rel="stylesheet" type="text/css"/>
+    <link href="node_modules/branding/css/systemBar.css" rel="stylesheet" type="text/css"/>
+    <script>
+        require(['sonoptmanager/sonoptmanager'], function (App) {
+            var currentApp = new App();
+            var container = document.getElementById('container');
+            container.innerHTML = '';
+            currentApp.start(container);
+        });
+    </script>
+</head>
+<body>
+<div id="TopMenu">
+    <div class="ebSystemBar">
+        <div class="ebSystemBar-logo"></div>
+        <div class="ebSystemBar-topMenuName">Ericsson Network Manager</div>
+    </div>
+</div>
+<div id="container" style='min-width:640px;'></div>
+</body>
+</html>

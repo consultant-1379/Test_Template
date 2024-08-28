@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<concept id="MyApp-Faq">
+    <title>Frequently Asked Questions</title>
+    <conbody>
+        <section>
+            <title>What is a collection?</title>
+            <p>
+                A collections is a set of network objects created by a user. When a user requests a collection, they
+                will receive a list of all objects in that collection with the latests details. Collections do not store
+                the state of the objects at time of creation. If an object in a collection no longer exists, it will not
+                be displayed in the list of objects.
+            </p>
+        </section>
+        <section>
+            <title>What web browsers can I use to launch Network Explorer?</title>
+            <p>
+                This app is designed to work in modern browsers supporting HTML5 and related web standards. Not all
+                features may work correctly in older browsers. We recommend Firefox Extended Support Release (ESR) for
+                stability.
+            </p>
+        </section>
+    </conbody>
+</concept>

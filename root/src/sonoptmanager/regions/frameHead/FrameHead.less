@@ -1,0 +1,179 @@
+.eaSonOptManager-rFrameHead {
+    &-buttonsHolder{
+        display:inline-block;
+    }
+    &-buttonsHolder button {
+        vertical-align: middle;
+        margin-right:5px;
+    }
+    &-buttonsHolder a {
+        vertical-align: middle;
+    }
+}
+
+.frame_header {
+    font-family: Arial, sans-serif;
+    padding-bottom: 24px;
+
+    &-quickActionBarSeparator{
+	    display: inline-block;
+        height: 2.4rem;
+	}
+		
+	&-top {
+        margin-top: 19px;
+        margin-bottom: 18px;
+        height: 60px;
+    }
+    
+    &-homeLink {
+        color: #000000 !important;
+        font-size: 32px !important;
+    }
+    
+    &-heading{
+        font-family: EricsSans;
+        font-size: 32px;
+        font-weight: normal;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    &-adminInfoSection {
+        float: right;
+    }
+
+    &-adminInfoSectionSonVis {
+        float:right;    
+        height: 47px;
+
+        a:link{
+            display:block;
+            top: 15px;
+            position: relative;
+            font-size: 16px;
+        }
+    }
+
+    &-adminInfoSectionDivider {
+        border-left:thin solid #000000;
+        float:right;
+        height: 47px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &-adminInfoSectionPolicies {
+        float:right;
+    }
+
+    &-text_and_value {
+        font-size: 14px;
+    }
+
+    &-breadcrumb {
+        float: left !important;
+    }
+
+    &-breadcrumbDivider {
+        border-bottom: 1.5px solid gray;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    @font-face {
+        font-family: EricsSans;
+        src: url('@{current-url}/EricsSans-Medium.otf');
+    }
+
+    //@font-face {
+      //  font-family: Arial;
+        //src: url('@{current-url}/Arial.ttf');
+    //}
+
+    &_current_true {
+        color: #333 !important;
+    }
+
+    &-cover{
+        position: absolute;
+        border-radius: 5px;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        z-index: 1150;
+    }
+    
+    &-LeftPart {
+        margin-left: 5px;
+    }
+    &-RightPart {
+        float:right;
+    }
+    
+    button {
+        margin-left: 5px;
+    }
+    
+    &-configIcon {
+        background: url('sonoptmanager/resources/sonoptmanager/navigation_bar/config.png');
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+		margin-right: 0px;
+    }
+    
+     &-statusIcon {
+	    height: 15px;
+	    position: relative;
+	    top: 1px;
+	    vertical-align: top;
+	    width: 15px;
+        background: url('sonoptmanager/resources/sonoptmanager/resources/controls/info-black-16x16.svg');
+        background-repeat: no-repeat;
+    }
+    
+    &-syncIcon {
+	    height: 15px;
+	    position: relative;
+	    right: 23px;
+	    top: 7px;
+	    width: 15px;
+        background: url('sonoptmanager/resources/sonoptmanager/resources/controls/info-black-16x16.svg');
+        background-repeat: no-repeat;
+    }
+    
+    &-statusButton {
+        width: 60px;
+        background-color:#89BA17;
+        color: #F0F0F0;
+    }
+    
+    &-syncButtonActive {
+        background-color:#89BA17;
+        min-width: 30px;
+        color: #F0F0F0;
+    }
+    
+    &-syncButtonInactive {
+        background-color:#f08a00;
+        min-width: 30px;
+        color: #F0F0F0;
+    }
+    
+    &-stackElement {
+        display: inline-block;
+    }
+    
+    &-ebQuickActionBar-Commands {
+        display: none;
+    }
+    
+    &-ebQuickActionBar-CreatePolicy-Commands {
+        display: none;
+    }
+}
+

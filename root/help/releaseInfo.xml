@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<concept id="MyApp-ReleaseInfo">
+    <title>ReleaseInfo</title>
+    <conbody>
+        <section>
+            <title>Network Explorer</title>
+            <p>
+               Initial release featuring:
+            </p>
+            <sectiondiv>
+                <p class="title">Search By FDN</p>
+                <p>
+                    To search for a managed object by FDN, input the desired FDN into the search field and click the
+                    search button. The ID, name and type of the FDN will be shown in a table below.
+                </p>
+            </sectiondiv>
+            <sectiondiv>
+                <p class="title">Search By Type</p>
+                <p>
+                    To search for managed objects by type, input the desired type, prefixed by "types/" into the search
+                    field and click the search button, for example "types/EUtranCellFDD". The ID, name and type of the
+                    objects will be shown in a table below.
+                </p>
+            </sectiondiv>
+            <sectiondiv>
+                <p class="title">Create Collection</p>
+                <p>
+                    To save a collection from a search, click "Save as...". Enter a Collection name, select the
+                    "Collection" radio button and click "Save". The collection info will be displayed at the top of the
+                    page.
+                </p>
+            </sectiondiv>
+            <sectiondiv>
+                <p class="title">Locate Collection</p>
+                <p>
+                    To locate a collection, the user can click on the collection name in the sidebar. This will display
+                    the saved collection.
+                </p>
+            </sectiondiv>
+            <sectiondiv>
+                <p class="title">Create Saved Search</p>
+                <p>
+                    To save your search query, click "Save as...". Enter a saved search name, select the "Saved Search"
+                    radio button and click "Save". The saved search info will be displayed at the top of the page.
+                </p>
+            </sectiondiv>
+            <sectiondiv>
+                <p class="title">Locate Saved Search</p>
+                <p>
+                    To locate a saved search, the user can click on the saved search name in the sidebar. This will
+                    display the saved search details and populate the search bar with the saved query.
+                </p>
+            </sectiondiv>
+        </section>
+    </conbody>
+</concept>
